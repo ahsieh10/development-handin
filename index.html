@@ -1,0 +1,154 @@
+  <!-- TO RUN IN BROWSER:
+    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
+    2. Right click html file and either run in default browser or another browser
+  -->
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css"/>
+      <title>Development</title>
+  </head>
+  <body>
+    <div aria-label='Website title' class = 'website_title'>
+      <h1>UIUX Project 4: Development</div>
+    </div>
+    <div aria-label='Website content'id='website_content'>
+      <div class = 'center_bar'>
+        <div class = 'page_header'>
+          <h2>Competitive Analysis</h2>
+          <p>In order to better build my aggregator website, I decided to observe features from similar websites and compared the differences in between these websites regarding the filtering, sorting, and favoriting components.</p>
+          <p>The results are summarized in this table:</p>
+          <table>
+            <tr>
+              <th></th>
+              <th><a class='table-header' href="https://www.amazon.com/">Amazon</a></th>
+              <th><a class='table-header'href="https://www.walmart.com/">Walmart</a></th>
+              <th><a class='table-header'href="https://www.target.com/">Target</a></th>
+            </tr>
+            <tr>
+              <td>Checkboxes hidden in dropdown</td>
+              <td class="option">N</td>
+              <td class="option">Y</td>
+              <td class="option">Y</td>
+            </tr>
+            <tr>
+              <td>Store recommendations (best seller, most popular) labeled</td>
+              <td class="option">Y</td>
+              <td class="option">Y</td>
+              <td class="option">N</td>
+            </tr>
+            <tr>
+              <td>Can add to favorites list on browsing page</td>
+              <td class="option">N</td>
+              <td class="option">Y</td>
+              <td class="option">Y</td>
+            </tr>
+            <tr>
+              <td>Shows closest in stock location</td>
+              <td class="option">Y</td>
+              <td class="option">Y</td>
+              <td class="option">Y</td>
+            </tr>
+            <tr>
+              <td>Shows cart list on sidebar</td>
+              <td class="option">Y</td>
+              <td class="option">N</td>
+              <td class="option">N</td>
+            </tr>
+            <tr>
+              <td>Sorting/filtering features on sidebar</td>
+              <td class="option">Y</td>
+              <td class="option">Y</td>
+              <td class="option">N</td>
+            </tr>
+            <tr>
+              <td>Contains information about recent buying frequency</td>
+              <td class="option">Y</td>
+              <td class="option">N</td>
+              <td class="option">N</td>
+            </tr>
+          </table>
+        </div>
+        <div class = 'body_element'>
+          <h3>Common features</h3>
+          <div class = 'content'>
+            <h4>There were a few things that I noticed were common amongst the 3 shopping websites:</h4>
+            <ul>
+              <li>They all had sorting dropdowns of different metrics: relevancy, price, and the like.</li>
+              <li>They had metrics on the side that would be adjusted according to the product.</li>
+              <li>For example, if I searched up women’s shirts, it showed options like “blouses”, “neckline”, “sleeve type” etc. in addition to the shipping, prices etc. for all products.</li>
+            </ul>
+          </div>
+          <h3>About Amazon</h3>
+          <h4>Most successful feature:</h4>
+          <p>Including the icons of the items of the cart in a small sidebar on the right hand side. That way, users can find roughly what is in the cart without clicking into it and also delete items accordingly as well.</p>
+          <h4>Least successful aspect:</h4>
+          <p>The sidebar filters are not compressible– which could be good for finding buttons but it does make the sidebar quite long to navigate.</p>
+          <h3>About Walmart</h3>
+          <h4>Most successful feature:</h4>
+          <p>Its organized layout and usage of colored text and labels to bring attention to specific metrics that are useful to the user. The prices of each item are bolded to stand out in comparison to the description, rating, and the shipping status of the item. Also, Walmart has arguably the least cluttered product cards out of the 3.</p>
+          <h4>Least successful aspect:</h4>
+          <p>Could probably use a bit of better item alignment regarding scanning patterns on the top bar menu items– I almost did not find the sorting feature because it was all the way on the right hand side away from all of the other filters.</p>
+          <h3>About Target</h3>
+          <h4>Most successful feature:</h4>
+          <p>All adjustable features are concentrated in one area: the top left corner, so it partially solves the problem that Walmart has with the sort dropdown. These buttons then expand out into the dropdowns that you find in the other websites. Also, Target has a hover effect that shows the product from a different angle which is quite cool.</p>
+          <h4>Least successful aspect:</h4>
+          <p>It lacks what Walmart has in terms of using formatting to emphasize important information– it uses colors for the prices, but the entire webpage has almost the same formatting, which makes it a bit difficult for the user to find what information they should be focusing on.</p>
+          <h3>Features that I want to implement in my website</h3>
+          <ul>
+            <li>I definitely want to keep all of the filters and sorters on the left sidebar. If I had more sort filters, I probably would not condense it into buttons like Target and would follow Walmart’s scheme of having multiple filter dropdowns, but since we only have 2, I will make dropdowns for filter and sort to implement the dropdown concept.</li>
+            <li>I also like the usage of keeping an icon-based cart status on the right side bar for Amazon, which I will use to fill up the space on the right side of the webpage.</li>
+            <li>Lastly, I will emulate Target’s option for keeping the add to cart button on the product page rather than in the details page of each product (so it seems that they are actually able to buy the product rather than just look at it).</li>
+          </ul>
+        </div>
+        <div class = 'page_header'>
+          <h2>My website</h2>
+        </div>
+        <div class = 'body_element'>
+          <div class = 'content'>
+            <p>I ultimately decided on creating a Spotify-like replica where users can add songs to a playlist (the aggregator). Users can sort songs by duration, and they can also filter by artist and by time duration as well.</p>
+            <a href="https://playlist-adder.vercel.app/">You can access this website here.</a>
+            <h3>Filter functionality</h3>
+            <p>My website contains the ability to only display songs by certain artists, using a checkbox dropdown as such (the default setting is all artists checked).</p>
+            <p>There is also the functionality to only display songs that are under a certain time duration (which one can enable with the checkbox and move the slider around).</p>
+            <img src="filter.png" class="filter-image">
+            <h3>Sort functionality</h3>
+            <p>This functionality is disabled by default, but the user can enable the sort and choose to sort songs by duration either in ascending or descending order.</p>
+            <img src="sort.png" class="filter-image">
+            <h3>Aggregate functionality</h3>
+            <p>Users can add a song to the playlist by clicking the "Add to playlist" button associated with each song. The song will the pop up on the right hand bar, and you can remove it any time by clicking the x button.</p>
+            <p>A running total of the length of the playlist is also displayed.</p>
+            <img src="aggregate.png">
+          </div>
+        </div>
+        <div class = 'page_header'>
+          <h2>Final takeaways</h2>
+        </div>
+        <div class = 'body_element'>
+          <p>I mainly struggled a bit to add customizable CSS to the react-bootstrap components that I had utilized rather than the React functionality aspect, so I had to modify my design greatly from what I had intended.</p>
+          <p>There were also many design decisions that could have been better made if I had more time (e.g. making sure that if I ever added more songs to this playlist, that I only had to change the code in one place rather than in several components).</p>
+          <p>Overall, this project was very interesting! I found it very exciting to be able to use React to make my website more interactive, and it was very satisfying to build this website from the ground up.</p>
+        </div>
+        <div id = 'bottom' class = 'credits sidebar_item'>
+          <div class = 'sidebar_title'>
+            Credits
+          </div>
+          <p>This website was made by Allison Hsieh</p>
+        </div>
+      </div>
+      <div id = 'right' class = 'right_bar'>
+        <div class = 'credits sidebar_item'>
+          <div class = 'sidebar_title'>
+            Credits
+          </div>
+          <p>This website was made by Allison Hsieh.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
